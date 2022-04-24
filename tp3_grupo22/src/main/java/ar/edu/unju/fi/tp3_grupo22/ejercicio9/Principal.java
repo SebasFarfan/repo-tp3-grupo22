@@ -90,14 +90,16 @@ public class Principal {
                         break;
                     case 4:
                         double total = 0;
-                        System.out.println("Codigo      Descripcion             marca      precio");
+                        System.out.println("Codigo\t\tDescripcion\t\tmarca\t\tprecio");
                         for (Producto producto : productos) {
                             System.out.println("-------------------------------------------------");
-                            System.out.println(producto.getCodigo() + "     " + producto.getDescripcion()
-                                    + "             " + producto.getMarca() + "      " + producto.getPrecio());
+                            System.out.println(producto.getCodigo() + "\t" + producto.getDescripcion()
+                                    + "\t" + producto.getMarca() + "\t" + producto.getPrecio());
                             total+=producto.getPrecio();
-                            System.out.println("TOTAL: $"+total);
+                            
                         }
+                        System.out.println("TOTAL: $"+total);
+                        System.out.println("-----------------------------------------------------");
                         System.out.println("Presione cualquier tecla para volver al menú principal");
                         entrada.next();
                         break;
